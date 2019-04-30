@@ -14,6 +14,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenStar.Service", "GreenS
 		{2618F1B2-8311-4C08-B2CC-0839FD46CB5D} = {2618F1B2-8311-4C08-B2CC-0839FD46CB5D}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenStar.API.Test", "GreenStar.API.Test\GreenStar.API.Test.csproj", "{51F36BB8-891D-4A76-BAA5-6983806B3C90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenStar.API.PerformanceTest", "GreenStar.API.PerformanceTest\GreenStar.API.PerformanceTest.csproj", "{A22521EE-654F-47B3-A480-01B4E859E11F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +36,14 @@ Global
 		{F8B0125E-9A24-44F4-B7CB-949C36870797}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8B0125E-9A24-44F4-B7CB-949C36870797}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8B0125E-9A24-44F4-B7CB-949C36870797}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51F36BB8-891D-4A76-BAA5-6983806B3C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51F36BB8-891D-4A76-BAA5-6983806B3C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51F36BB8-891D-4A76-BAA5-6983806B3C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51F36BB8-891D-4A76-BAA5-6983806B3C90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A22521EE-654F-47B3-A480-01B4E859E11F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A22521EE-654F-47B3-A480-01B4E859E11F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A22521EE-654F-47B3-A480-01B4E859E11F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A22521EE-654F-47B3-A480-01B4E859E11F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

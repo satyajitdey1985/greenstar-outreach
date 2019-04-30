@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GreenStar.Service.Repositories.Academy
 {
-    class StudentRepository : Repository<Student>,  IStudentRepository 
+    public class StudentRepository : Repository<Student>,  IStudentRepository 
     {
         public StudentRepository(ApplicationDbContext context) : base(context)
         {

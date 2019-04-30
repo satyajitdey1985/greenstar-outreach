@@ -12,7 +12,7 @@ using System.Web.Http.Description;
 
 namespace GreenStar.API.Controllers.Api
 {
-    [EnableCors(origins: "*", headers: "*", methods: "*")]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]  
     public class UserController : ApiController
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -21,9 +21,45 @@ namespace GreenStar.API.Controllers.Api
         {
             _unitOfWork = unitOfWork;
         }
+        //[HttpPost]
+        //[Route("test")]
+        //public IHttpActionResult Test(UserModel model)
+        //{
+        //    var user = _unitOfWork.Users.LoginCheck(model.email, Utility.Base64Encode(model.password));
+        //    if (user != null)
+        //    {
+        //        return Ok(user);
+        //    }
+            
+        //        return NotFound();
+           
+        //    //try
+        //    //{
+        //    //    if (!ModelState.IsValid)
+        //    //        return BadRequest();
+
+        //    //var user = _unitOfWork.Users.LoginCheck(model.email, Utility.Base64Encode(model.password));
+        //    //if (user != null)
+        //    //{
+        //    //    return Ok(user);
+        //    //}
+        //    //else
+        //    //{
+        //    //    return Unauthorized();
+        //    //}
+
+        //    //}
+        //    //catch (Exception ex)
+        //    //{
+        //    //    return InternalServerError(ex);
+        //    //}
+
+        //}
+
         // POST: api/user
-        [ResponseType(typeof(UserDetails))]
+        //[ResponseType(typeof(UserDetails))]
         [HttpPost]
+        //[Route("login")]
         public IHttpActionResult Login(UserModel model)
         {
 
@@ -39,7 +75,7 @@ namespace GreenStar.API.Controllers.Api
                 }
                 else
                 {
-                   return  Unauthorized();
+                   return  NotFound();
                 }
                
             }
